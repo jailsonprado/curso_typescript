@@ -50,3 +50,13 @@ const arnold = {
 };
 console.log(arnold);
 console.log(arnold.type);
+// 7 --> readonly array
+let myArray = ['Maca', 'Laranja', 'abacate'];
+console.log(myArray);
+myArray.forEach((item) => {
+    console.log("Frutas: " + item);
+});
+myArray = myArray.map((item) => {
+    return `Frutas: ${item}`;
+});
+console.log(myArray);
