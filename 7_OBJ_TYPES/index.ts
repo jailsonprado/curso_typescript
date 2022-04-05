@@ -61,8 +61,8 @@ interface Car {
 }
 
 const fusca: Car = {
-  brand: 'VW',
-  wheels: 4
+  brand: "VW",
+  wheels: 4,
 };
 
 console.log(fusca);
@@ -77,56 +77,60 @@ interface Human {
 }
 
 interface SuperHuman extends Human {
-  superPowers: string[]
+  superPowers: string[];
 }
 
 const hero: Human = {
-  name: 'Goku',
-  age: 32
-}
+  name: "Goku",
+  age: 32,
+};
 
 console.log(hero);
 
 const heroWithPower: SuperHuman = {
   ...hero,
-  superPowers: ['Genki Dama' , 'Kamehameha']
-}
+  superPowers: ["Genki Dama", "Kamehameha"],
+};
 
 console.log(heroWithPower);
 
 // 6 - intersection types
 
 interface Character {
-  name: string
+  name: string;
 }
 
 interface Gun {
-  type: string,
-  caliber: number
+  type: string;
+  caliber: number;
 }
 
 type HumanWithGun = Character & Gun;
 
 const arnold: HumanWithGun = {
-  name: 'Arnold',
-  type: 'Shotgun',
-  caliber: 12
-}
+  name: "Arnold",
+  type: "Shotgun",
+  caliber: 12,
+};
 
 console.log(arnold);
 console.log(arnold.type);
 
 // 7 --> readonly array
 
-let myArray: ReadonlyArray<string> = ['Maca', 'Laranja', 'abacate']
+let myArray: ReadonlyArray<string> = ["Maca", "Laranja", "abacate"];
 console.log(myArray);
 
 myArray.forEach((item) => {
   console.log("Frutas: " + item);
-})
+});
 
 myArray = myArray.map((item) => {
-  return `Frutas: ${item}`
-})
+  return `Frutas: ${item}`;
+});
 
-console.log(myArray)
+console.log(myArray);
+
+// 8 --> Tuplas
+
+

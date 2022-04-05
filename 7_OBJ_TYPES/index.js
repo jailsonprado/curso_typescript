@@ -32,26 +32,26 @@ const u2 = {
 showUserDetails(u1);
 showUserDetails(u2);
 const fusca = {
-    brand: 'VW',
-    wheels: 4
+    brand: "VW",
+    wheels: 4,
 };
 console.log(fusca);
 const hero = {
-    name: 'Goku',
-    age: 32
+    name: "Goku",
+    age: 32,
 };
 console.log(hero);
-const heroWithPower = Object.assign(Object.assign({}, hero), { superPowers: ['Genki Dama', 'Kamehameha'] });
+const heroWithPower = Object.assign(Object.assign({}, hero), { superPowers: ["Genki Dama", "Kamehameha"] });
 console.log(heroWithPower);
 const arnold = {
-    name: 'Arnold',
-    type: 'Shotgun',
-    caliber: 12
+    name: "Arnold",
+    type: "Shotgun",
+    caliber: 12,
 };
 console.log(arnold);
 console.log(arnold.type);
 // 7 --> readonly array
-let myArray = ['Maca', 'Laranja', 'abacate'];
+let myArray = ["Maca", "Laranja", "abacate"];
 console.log(myArray);
 myArray.forEach((item) => {
     console.log("Frutas: " + item);
@@ -60,3 +60,4 @@ myArray = myArray.map((item) => {
     return `Frutas: ${item}`;
 });
 console.log(myArray);
+// 8 --> Tuplas
